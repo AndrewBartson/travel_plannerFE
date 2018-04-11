@@ -1,0 +1,78 @@
+.container1 {
+  display: grid;
+  grid-template-columns: 1fr  342px; 
+}
+
+#sidebar {
+	display: grid;
+	grid-template-rows: 50px 5fr 1fr 1fr 1fr;
+}
+
+.main_title {
+	display: grid;
+	justify-items: center;
+}
+
+div.ui-datepicker select {
+	width: auto; 
+	font-size: 100%; 
+	color: #362b36;
+}
+
+input[type="number"] {
+	width: 45px;
+}
+
+#resume_time {
+	width: 45px;
+}
+
+#custom_options {
+	/*border: 1px solid red;*/
+	/*margin-right: 30px;*/
+		opacity: 0.4;
+}
+#custom_options label,
+#custom_options input {
+	display: inline;
+}
+#user_input ul {
+	list-style-type: none;
+}
+#default_li {
+  background-color: yellow;
+	margin: 0;
+	padding: 10px;	
+}
+#custom_li {
+	margin: 0;
+    padding: 10px;	
+}
+.custom_options li { 
+  margin-left: 1em;
+	font: 10px/21px Tahoma; 
+}
+.highlight {
+	background-color: yellow;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="password"],
+input[type="email"],
+select {
+	font: 14px Tahoma, "Tahoma", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#results, #json{
+	background-color: #def;
+}
+
+#results p, #json {
+	font-family: monospace;
+	margin: .5ex 1ex;
+}
+
+#results p.error, #json {
+	color: #c66;
+}
