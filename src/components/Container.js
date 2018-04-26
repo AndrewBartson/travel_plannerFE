@@ -5,7 +5,8 @@ import MyMapComponent from "./MyMapComponent";
 
 class Container extends React.PureComponent {
   state = {
-    isMarkerShown: true
+    isMarkerShown: true,
+    routesData: []
   };
 
   componentDidMount() {
@@ -23,17 +24,35 @@ class Container extends React.PureComponent {
     this.delayedShowMarker();
   };
 
+  saveRoute = (data) => {
+    this.setState({trip_data: data})
+    //console.log('saveRoute() - this.state.trip_data - ', this.state.trip_data)
+  }
+
+  setDirections = (data) => {
+    this.setState({directions: data})
+
+  }
+
   render() {
     return (
       <div  className="container1">
+        <TripForm 
+          saveRoute={this.saveRoute}
+          trip_data={this.state.trip_data}
+        />
         <MyMapComponent
           isMarkerShown={this.state.isMarkerShown}
           onMarkerClick={this.handleMarkerClick}
+          trip_data={this.state.trip_data}
+          setDirections={this.setDirections}
         />
-        <TripForm />
+
       </div>
     );
   }
 }
 
 export default Container
+
+// AIzaSyDZSeVvDKJQFTgtYkjzOe368PIDbaq6OQE
