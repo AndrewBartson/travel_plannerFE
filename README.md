@@ -22,11 +22,12 @@ In the command line terminal:
 "npm install"
 "npm start"
 
-The front end components will run a server on localhost:3000.
+The front end components run a server on localhost:3000.
 In this version of the project, the url links in the front end components are configured to
-interact with localhost:8001.
-The back end components will run a server on localhost:8001.
-The back end will make calls to Google Directions API and Google Places API.
+send HTTP requests to localhost:8001.
+
+The back end components run a server on localhost:8001.
+The back end sends HTTP requests to Google Directions API and Google Places API.
 
 
 

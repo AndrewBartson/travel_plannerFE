@@ -26,12 +26,10 @@ class Container extends React.PureComponent {
 
   saveRoute = (data) => {
     this.setState({trip_data: data})
-    //console.log('saveRoute() - this.state.trip_data - ', this.state.trip_data)
   }
 
   setDirections = (data) => {
     this.setState({directions: data})
-
   }
 
   render() {
@@ -54,5 +52,3 @@ class Container extends React.PureComponent {
 }
 
 export default Container
-
-// AIzaSyDZSeVvDKJQFTgtYkjzOe368PIDbaq6OQE
