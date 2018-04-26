@@ -23,7 +23,7 @@ class TripForm extends Component {
     for (let entry of formData.entries()) {
       trip_settings[entry[0]] = entry[1];
     }
-    axios.post('http://localhost:8001/trips', trip_settings)
+    axios.post('https://travelers-helper-server.herokuapp.com/trips', trip_settings)
       .then(response => {
         this.props.saveRoute(response.data)
         console.log('response.data - ', response.data)
